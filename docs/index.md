@@ -18,23 +18,23 @@ Entirius is a comprehensive e-commerce platform that combines:
 
 ## Key Features
 
-### 🛍️ Product Information Management (PIM)
+### Product Information Management (PIM)
 Centralized product data management with rich attributes, categories, and relationships.
 
-### 🤖 AI Agents
+### AI Agents
 Intelligent agents that assist with:
 - Content generation
 - SEO optimization
 - Product recommendations
 - Customer support
 
-### 🏗️ Modular Design
+### Modular Design
 Pick and choose components:
 - **Backend Services**: Django-based API services
 - **Frontend Applications**: React/Next.js storefronts
 - **AI Modules**: Specialized AI agents for different tasks
 
-### 🔧 Developer Experience
+### Developer Experience
 - RESTful APIs with OpenAPI documentation
 - TypeScript support
 - Comprehensive testing

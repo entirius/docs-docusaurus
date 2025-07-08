@@ -70,4 +70,4 @@ If you encounter any issues:
 2. Review the [Development](./development) documentation
 3. Join our community discussions
 
-Happy building with Entirius! 🚀
+Happy building with Entirius!
