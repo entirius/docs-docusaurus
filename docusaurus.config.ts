@@ -65,7 +65,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Entirius',
+      title: '',
       logo: {
         alt: 'Entirius Logo',
         src: 'img/logo.png',
