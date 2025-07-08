@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Modular Architecture',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Build exactly what you need with our modular components. Start small 
+        with a simple PIM system and scale to a full marketplace when you're ready.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'AI-Powered Agents',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Intelligent agents handle complex e-commerce tasks like content generation, 
+        SEO optimization, and customer support. Focus on your business, not the details.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Developer-Friendly',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Built with Django, React, and modern web technologies. Full TypeScript support,
+        comprehensive APIs, and extensive documentation to get you started quickly.
       </>
     ),
   },

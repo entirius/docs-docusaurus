@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Entirius Documentation',
+  tagline: 'E-commerce AI Platform - Open Source',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://docs.entirius.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -23,7 +23,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'entirius', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'entirius-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -65,21 +65,33 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Entirius',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Entirius Logo',
+        src: 'img/logo.png',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'developmentSidebar',
+          position: 'left',
+          label: 'Development',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'apiSidebar',
+          position: 'left',
+          label: 'API Reference',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/entirius/docs-docusaurus',
+          href: 'https://github.com/entirius/entirius',
           label: 'GitHub',
           position: 'right',
         },
@@ -89,11 +101,19 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/index',
+              label: 'Getting Started',
+              to: '/docs/getting-started',
+            },
+            {
+              label: 'API Reference',
+              to: '/docs/api-introduction',
+            },
+            {
+              label: 'Development',
+              to: '/docs/development',
             },
           ],
         },
@@ -101,8 +121,12 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/entirius/entirius',
+            },
+            {
+              label: 'Issues',
+              href: 'https://github.com/entirius/entirius/issues',
             }
           ],
         },
@@ -114,13 +138,13 @@ const config: Config = {
               to: '/blog',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/entirius/',
+              label: 'Changelog',
+              to: '/docs/changelog',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Entirius, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Entirius. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
