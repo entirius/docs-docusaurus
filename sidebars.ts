@@ -17,6 +17,8 @@ const sidebars: SidebarsConfig = {
   docsSidebar: [
     'index',
     'getting-started',
+    'business-scenarios',
+    'mvp-onepager',
   ],
 
   // API Reference sidebar
@@ -27,6 +29,7 @@ const sidebars: SidebarsConfig = {
   // Development sidebar
   developmentSidebar: [
     'development',
+    'architecture',
     'modules',
     'services',
     {
