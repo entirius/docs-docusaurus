@@ -2,7 +2,7 @@
 
 Onepager represents simplest approach to build an end-to-end working platform with Entirius tech stack.
 
-![Big Picture DIA](/img/entirius-base-MVP.drawio.svg)
+![Big Picture DIA](/img/entirius-base-mvp.svg)
 
 How to simply setup and run Entirius MVP as docker with [Entirius Backend](services.md) with PWA.
 

@@ -24,10 +24,10 @@ For detailed information about ADRs, including templates and processes, see the 
 ## Architecture Diagrams
 
 ### High-level Architecture
-![Entirius Architecture Overview](/img/entirius-base-big-picture.drawio.svg)
+![Entirius Architecture Overview](/img/entirius-base-big-picture.svg)
 
 ### MVP Architecture
-![Entirius MVP Architecture](/img/entirius-base-MVP.drawio.svg)
+![Entirius MVP Architecture](/img/entirius-base-mvp.svg)
 
 ## Technologies
 
