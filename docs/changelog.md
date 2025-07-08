@@ -58,7 +58,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Comprehensive test suite
   - Code formatting with Black
   - Type checking with mypy
-  - Documentation with Mintlify
+  - Documentation with Docusaurus
   - Development environment setup
 
 ### Architecture

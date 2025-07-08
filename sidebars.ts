@@ -45,7 +45,7 @@ const sidebars: SidebarsConfig = {
         'adr/adr-003-react-nextjs-frontend',
         'adr/adr-004-mozilla-public-license',
         'adr/adr-005-github-code-management',
-        'adr/adr-006-mintlify-documentation-platform',
+        'adr/adr-006-docusaurus-documentation-platform',
         'adr/adr-007-uv-python-package-manager',
         'adr/adr-template',
       ],

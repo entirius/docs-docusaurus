@@ -43,7 +43,6 @@ entirius/
 │   ├── entirius-pim/         # Product Information Management
 │   └── entirius-config/      # Configuration management
 ├── docs-entirius/            # Documentation (this site)
-└── docs-entirius-mintlify/   # Legacy documentation
 ```
 
 ## Development Workflow

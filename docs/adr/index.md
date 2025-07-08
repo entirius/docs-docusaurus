@@ -16,7 +16,7 @@ Each ADR captures the context, options considered, decision made, and consequenc
 | [ADR-003](./adr-003-react-nextjs-frontend) | Next.js for Frontend Applications | Accepted | 2025-06-23 | Development Team |
 | [ADR-004](./adr-004-mozilla-public-license) | Mozilla Public License for Codebase | Accepted | 2025-06-23 | Development Team |
 | [ADR-005](./adr-005-github-code-management) | GitHub as Code Repository | Accepted | 2025-06-23 | Development Team |
-| [ADR-006](./adr-006-mintlify-documentation-platform) | Mintlify for Technical Documentation | Accepted | 2025-06-23 | Development Team |
+| [ADR-006](./adr-006-docusaurus-documentation-platform) | Docusaurus for Technical Documentation | Accepted | 2025-06-23 | Development Team |
 | [ADR-007](./adr-007-uv-python-package-manager) | UV Python Package Manager | Accepted | 2025-06-23 | Development Team |
 | [Template](./adr-template) | ADR Template | Template | - | System |
 
