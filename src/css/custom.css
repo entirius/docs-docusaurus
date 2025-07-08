@@ -30,3 +30,16 @@
   --ifm-background-surface-color: #061a20;
   --docusaurus-highlighted-code-line-bg: rgba(38, 50, 56, 0.3);
 }
+
+/* Custom sidebar styling */
+.theme-doc-sidebar-menu .menu__list .menu__list-item {
+  font-size: 0.9rem;
+}
+
+.theme-doc-sidebar-menu .menu__list .menu__list .menu__list-item {
+  font-size: 0.8rem;
+}
+
+.theme-doc-sidebar-menu .menu__list .menu__list .menu__list .menu__list-item {
+  font-size: 0.75rem;
+}
