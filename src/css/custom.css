@@ -43,3 +43,14 @@
 .theme-doc-sidebar-menu .menu__list .menu__list .menu__list .menu__list-item {
   font-size: 0.75rem;
 }
+
+/* Reduce spacing between submenu items */
+.theme-doc-sidebar-menu .menu__list .menu__list .menu__list-item {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.theme-doc-sidebar-menu .menu__list .menu__list .menu__list .menu__list-item {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
