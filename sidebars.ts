@@ -35,8 +35,11 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Architecture Decision Records',
+      link: {
+        type: 'doc',
+        id: 'adr/index',
+      },
       items: [
-        'adr/index',
         'adr/adr-001-modular-monolith',
         'adr/adr-002-openapi-django-rest-framework',
         'adr/adr-003-react-nextjs-frontend',
