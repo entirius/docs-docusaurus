@@ -18,6 +18,7 @@ Each ADR captures the context, options considered, decision made, and consequenc
 | [ADR-005](./adr-005-github-code-management) | GitHub as Code Repository | Accepted | 2025-06-23 | Development Team |
 | [ADR-006](./adr-006-docusaurus-documentation-platform) | Docusaurus for Technical Documentation | Accepted | 2025-06-23 | Development Team |
 | [ADR-007](./adr-007-uv-python-package-manager) | UV Python Package Manager | Accepted | 2025-06-23 | Development Team |
+| [ADR-008](./adr-008-github-repository-naming-conventions) | GitHub Repository Naming Conventions | Proposed | 2025-07-10 | Piotr Brzozowski |
 | [Template](./adr-template) | ADR Template | Template | - | System |
 
 *This list will be updated as new ADRs are added to the project*

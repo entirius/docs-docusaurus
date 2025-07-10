@@ -47,6 +47,7 @@ const sidebars: SidebarsConfig = {
         'adr/adr-005-github-code-management',
         'adr/adr-006-docusaurus-documentation-platform',
         'adr/adr-007-uv-python-package-manager',
+        'adr/adr-008-github-repository-naming-conventions',
         'adr/adr-template',
       ],
     },
