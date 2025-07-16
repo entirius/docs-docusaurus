@@ -21,6 +21,7 @@ Each ADR captures the context, options considered, decision made, and consequenc
 | [ADR-008](./adr-008-github-repository-naming-conventions) | GitHub Repository Naming Conventions | Accepted | 2025-07-10 | Piotr Brzozowski |
 | [ADR-009](./adr-009-pyproject-toml-standard) | pyproject.toml Standard for Python Projects | Accepted | 2025-07-10 | Piotr Brzozowski |
 | [ADR-010](./adr-010-ruff-python-linter) | Ruff as Standard Python Linter and Formatter | Proposed | 2025-07-10 | Piotr Brzozowski |
+| [ADR-011](./adr-011-kiss-principle) | KISS Principle (Keep It Simple, Stupid) | Accepted | 2025-07-16 | Piotr Brzozowski |
 | [Template](./adr-template) | ADR Template | Template | - | System |
 
 *This list will be updated as new ADRs are added to the project*
