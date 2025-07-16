@@ -48,6 +48,8 @@ const sidebars: SidebarsConfig = {
         'adr/adr-006-docusaurus-documentation-platform',
         'adr/adr-007-uv-python-package-manager',
         'adr/adr-008-github-repository-naming-conventions',
+        'adr/adr-009-pyproject-toml-standard',
+        'adr/adr-010-ruff-python-linter',
         'adr/adr-template',
       ],
     },

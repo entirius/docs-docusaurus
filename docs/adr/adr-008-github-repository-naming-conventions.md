@@ -25,6 +25,7 @@ The Entirius platform uses different technology stacks for different types of se
 - **Frontend Services**: PWA applications built with Node.js/React for user interfaces
 - **Django Services**: Django-based services (Python) for API endpoints and business logic
 - **Django Modules**: Django modules that extend the modular monolith architecture
+- **Python Libs**: Python lib modules
 - **Tools**: Various utility applications that may use different technologies based on their purpose
 
 This diversity in technology stacks makes consistent naming even more important for:
@@ -38,14 +39,12 @@ This diversity in technology stacks makes consistent naming even more important 
 
 **Prefixed Naming with Component Type**
 
-**Rationale**: 
-This option provides the best balance of clarity, scalability, and tooling support. 
 The naming convention will be:
 
 - **Frontend PWA Services**: `entirius-pwa-[name]` (e.g., `entirius-pwa-cynthia`, `entirius-pwa-admin`)
 - **Django Services**: `entirius-service-[name]` (e.g., `entirius-service-backend`, `entirius-service-auth`)
 - **Django Modules**: `entirius-django-[name]` (e.g., `entirius-django-pim`, `entirius-django-checkout`)
-- **Python Modules**: `entirius-python-[name]` (e.g., `entirius-python-paypal-sdk`, `entirius-python-process-logger`)
+- **Python Libs**: `entirius-pylib-[name]` (e.g., `entirius-pylib-paypal-sdk`, `entirius-pylib-process-logger`)
 - **Tools**: `entirius-tool-[name]` (e.g., `entirius-tool-csv-wizard`, `entirius-tool-image-resizer`)
 - **Documentation**: `entirius-docs-[name]` (e.g., `entirius-docs-api`, `entirius-docs-user`)
 
