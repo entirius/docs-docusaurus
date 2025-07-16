@@ -51,6 +51,7 @@ const sidebars: SidebarsConfig = {
         'adr/adr-009-pyproject-toml-standard',
         'adr/adr-010-ruff-python-linter',
         'adr/adr-011-kiss-principle',
+        'adr/adr-012-english-language-requirement',
         'adr/adr-template',
       ],
     },
