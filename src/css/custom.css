@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+
 
 /* You can override the default Infima variables here. */
 :root {
@@ -15,25 +17,38 @@
   --ifm-color-primary-lightest: #00E5FF;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: "Readex Pro", sans-serif;
+  --ifm-heading-font-family: "Readex Pro", sans-serif;
+  --ifm-heading-font-weight: 400;
+  --ifm-button-font-weight:400;
+  
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #00E5FF;
-  --ifm-color-primary-dark: #00B8D4;
-  --ifm-color-primary-darker: #00ACC1;
-  --ifm-color-primary-darkest: #0097A7;
-  --ifm-color-primary-light: #40E0D0;
-  --ifm-color-primary-lighter: #66E0E0;
-  --ifm-color-primary-lightest: #80F0FF;
-  --ifm-background-color: #061a20;
-  --ifm-background-surface-color: #061a20;
+  --ifm-color-primary: #00CFE6;
+  --ifm-color-primary-dark: #00A5B8;
+  --ifm-color-primary-darker: #0097A8;
+  --ifm-color-primary-darkest: #00818F;
+  --ifm-color-primary-light: #0AE7FF;
+  --ifm-color-primary-lighter: #2EEAFF;
+  --ifm-color-primary-lightest: #66F0FF;
+  --ifm-background-color: #12141A;
+  --ifm-background-surface-color: #12141A;
+  --ifm-color-content:#C8CAD4;
+  --ifm-footer-link-color:#C8CAD4;
   --docusaurus-highlighted-code-line-bg: rgba(38, 50, 56, 0.3);
 }
+[data-theme='dark'] .footer--dark{
+  --ifm-footer-background-color: #1A1C25;
+  --ifm-footer-title-color:#C8CAD4;
+  --ifm-footer-link-color: #9A9CAA;
+
+} 
 
 /* Custom sidebar styling */
 .theme-doc-sidebar-menu .menu__list .menu__list-item {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 .theme-doc-sidebar-menu .menu__list .menu__list .menu__list-item {
@@ -46,7 +61,7 @@
 
 /* Reduce spacing between submenu items */
 .theme-doc-sidebar-menu .menu__list .menu__list .menu__list-item {
-  margin-top: 0.25rem;
+   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
 
