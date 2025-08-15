@@ -76,7 +76,7 @@ Note: The main platform uses UV for Python package management, but this docs rep
 ## Directory Structure
 
 ```
-docs-entirius/
+docs/entirius-docs/
 ├── docs/                   # Documentation content
 │   ├── adr/                # Architecture Decision Records files in md
 │   │   ├── adr-001-modular-monolith.md
@@ -84,7 +84,6 @@ docs-entirius/
 │   │   └── ...
 │   ├── architecture.md     # Architecture overview
 │   ├── development.md      # Development guidelines
-│   ├── getting-started.md  # Getting started guide
 │   └── ...
 ├── blog/                   # Blog posts
 ├── src/                    # Docusaurus source code

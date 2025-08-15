@@ -42,7 +42,7 @@ entirius/
 ├── modules/
 │   ├── entirius-pim/         # Product Information Management
 │   └── entirius-config/      # Configuration management
-├── docs-entirius/            # Documentation (this site)
+├── docs/entirius-docs/       # Documentation (this site)
 ```
 
 ## Development Workflow
