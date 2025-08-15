@@ -23,6 +23,7 @@ Each ADR captures the context, options considered, decision made, and consequenc
 | [ADR-010](./adr-010-ruff-python-linter) | Ruff as Standard Python Linter and Formatter | Proposed | 2025-07-10 | Piotr Brzozowski |
 | [ADR-011](./adr-011-kiss-principle) | KISS Principle (Keep It Simple, Stupid) | Accepted | 2025-07-16 | Piotr Brzozowski |
 | [ADR-012](./adr-012-english-language-requirement) | English Language Requirement for Code and Documentation | Accepted | 2025-07-16 | Piotr Brzozowski |
+| [ADR-013](./adr-013-hatchling-build-backend) | Hatchling Build Backend | Accepted | 2025-08-15 | Piotr Brzozowski |
 | [Template](./adr-template) | ADR Template | Template | - | System |
 
 *This list will be updated as new ADRs are added to the project*

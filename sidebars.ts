@@ -52,6 +52,7 @@ const sidebars: SidebarsConfig = {
         'adr/adr-010-ruff-python-linter',
         'adr/adr-011-kiss-principle',
         'adr/adr-012-english-language-requirement',
+        'adr/adr-013-hatchling-build-backend',
         'adr/adr-template',
       ],
     },

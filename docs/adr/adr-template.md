@@ -68,16 +68,9 @@ Explain why this option was chosen. Include:
 - Other effects that are neither positive nor negative
 
 ## Implementation Plan
+(a short list of the most important tasks to be performed)
 
-1. **Phase 1**: [Description of first phase]
-   - Tasks to be completed
-   - Responsible parties
-   - Timeframe
-
-2. **Phase 2**: [Description of second phase]
-   - Tasks to be completed
-   - Responsible parties
-   - Timeframe
+- Tasks to be completed
 
 ## Success Metrics
 
