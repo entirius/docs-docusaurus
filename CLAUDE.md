@@ -77,8 +77,8 @@ Note: The main platform uses UV for Python package management, but this docs rep
 
 ```
 docs-entirius/
-├── docs/                    # Documentation content
-│   ├── adr/                # Architecture Decision Records
+├── docs/                   # Documentation content
+│   ├── adr/                # Architecture Decision Records files in md
 │   │   ├── adr-001-modular-monolith.md
 │   │   ├── adr-007-uv-python-package-manager.md
 │   │   └── ...
