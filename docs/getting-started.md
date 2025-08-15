@@ -30,12 +30,16 @@ Navigate to the backend service:
 cd services/entirius-backend
 ```
 
-Create a virtual environment and install dependencies:
+Install dependencies using UV (modern Python package manager):
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+# Install UV first if not already installed
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Create virtual environment and install dependencies
+uv venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+uv sync
 ```
 
 ### 3. Database Setup

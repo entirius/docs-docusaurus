@@ -12,7 +12,7 @@ sidebar_position: 7
 
 ## Context
 
-The Entirius project currently uses traditional Python package management tools (pip, venv, requirements.txt files) for dependency management and virtual environment creation. While functional, these tools have several limitations:
+The Entirius project is a modern e-commerce AI platform designed from the ground up with contemporary development practices. As a modern project, we adopt current Python packaging standards using pyproject.toml and modern dependency management. Traditional approaches with legacy requirements.txt files and pip/venv have several limitations:
 
 - Slow dependency resolution and installation times
 - Dependency conflict resolution challenges
@@ -20,18 +20,20 @@ The Entirius project currently uses traditional Python package management tools 
 - Lack of modern dependency locking mechanisms
 - Poor performance with large dependency trees
 - Limited cross-platform consistency
+- Outdated requirements.txt format without rich metadata support
 
-The project needs a faster, more reliable Python package management solution that can:
-- Significantly improve development workflow speed
-- Provide better dependency resolution
-- Maintain compatibility with existing Python ecosystem
-- Reduce complexity in development environment setup
-- Support both local development and CI/CD pipelines
+As a modern project built with performance and developer experience in mind, Entirius requires a state-of-the-art Python package management solution that can:
+- Deliver exceptional development workflow speed from day one
+- Provide superior dependency resolution capabilities
+- Support modern Python packaging standards (PEP 517/518)
+- Use pyproject.toml for unified project configuration
+- Minimize complexity in development environment setup
+- Support efficient local development and CI/CD pipelines
 
 ## Considered Options
 
-### Option 1: Continue with pip + venv
-- **Description**: Maintain current approach using pip for package management and venv for virtual environments
+### Option 1: Adopt traditional pip + venv + requirements.txt
+- **Description**: Use the legacy approach with pip, venv, and requirements.txt files for dependency management
 - **Pros**: 
   - Well-established and widely known
   - Part of Python standard library
@@ -42,117 +44,111 @@ The project needs a faster, more reliable Python package management solution tha
   - Poor dependency conflict resolution
   - Manual dependency locking process
   - Multiple tools to manage
-- **Impact on system**: No changes required
+  - Outdated requirements.txt format lacks metadata
+  - No built-in support for modern packaging standards
+- **Impact on system**: Would require accepting slower development workflows and legacy file formats
 
 ### Option 2: Poetry
-- **Description**: Adopt Poetry as the Python package and dependency manager
+- **Description**: Adopt Poetry as the Python package and dependency manager with pyproject.toml
 - **Pros**: 
   - Integrated dependency management and virtual environments
   - Automatic dependency locking (poetry.lock)
+  - Uses modern pyproject.toml standard
   - Good dependency resolution
   - Popular in Python community
 - **Cons**:
   - Still relatively slow compared to modern alternatives
-  - Additional complexity with pyproject.toml configuration
+  - Complex pyproject.toml configuration for advanced use cases
   - Occasional dependency resolution issues
   - Heavier runtime requirements
-- **Impact on system**: Requires migration of requirements files to pyproject.toml
+- **Impact on system**: Establishes modern pyproject.toml-based workflow but with slower performance
 
 ### Option 3: UV
-- **Description**: Adopt Astral's UV as the primary Python package manager and virtual environment tool
+- **Description**: Adopt Astral's UV as the primary Python package manager with pyproject.toml
 - **Pros**: 
   - Extremely fast (10-100x faster than pip)
-  - Drop-in replacement for pip, venv, and other tools
+  - Native pyproject.toml support (PEP 517/518)
   - Written in Rust for performance
-  - Compatible with existing requirements.txt and pyproject.toml
+  - Modern dependency management with uv.lock
   - Unified tool for multiple package management tasks
-  - Strong dependency resolution
+  - Superior dependency resolution
   - Active development by Astral (creators of Ruff)
+  - First-class support for modern Python packaging standards
 - **Cons**:
   - Relatively new tool (less mature ecosystem)
   - Team learning curve
   - Potential compatibility issues with edge cases
-- **Impact on system**: Minimal changes to existing workflow, mostly performance improvements
+- **Impact on system**: Establishes modern pyproject.toml-based workflow with exceptional performance from project inception
 
 ## Decision
 
 **Chosen option**: Option 3 - UV Python Package Manager
 
 **Rationale**: 
-UV provides significant performance improvements while maintaining compatibility with our existing toolchain. Key decision factors:
+UV aligns perfectly with Entirius's commitment to modern, high-performance development practices. As a greenfield project, we can adopt best-in-class tooling from the start. Key decision factors:
 
 - **Performance**: 10-100x faster installation times will dramatically improve developer productivity
-- **Compatibility**: Drop-in replacement for existing tools with minimal migration effort
-- **Unified tooling**: Replaces multiple tools (pip, venv, pip-tools) with a single fast solution
+- **Modern standards**: Native support for pyproject.toml and modern Python packaging (PEP 517/518)
+- **Unified tooling**: Single tool replacing pip, venv, pip-tools with superior performance
 - **Future-proof**: Backed by Astral, the company behind Ruff, showing commitment to Python tooling excellence
-- **Risk mitigation**: Can be adopted incrementally and easily reverted if issues arise
-- **CI/CD benefits**: Faster builds and deployments due to improved dependency installation speed
+- **Modern foundation**: Establishes cutting-edge development practices with pyproject.toml from project inception
+- **Advanced dependency management**: Modern uv.lock files providing deterministic builds
+- **CI/CD benefits**: Faster builds and deployments with modern dependency resolution
 
 ## Consequences
 
 ### Positive
 - Dramatically faster dependency installation (10-100x improvement)
-- Improved developer experience with faster environment setup
+- Modern pyproject.toml-based configuration from project start
 - Unified tool reducing complexity in development workflow
-- Better dependency resolution and conflict handling
+- Superior dependency resolution with uv.lock for deterministic builds
 - Faster CI/CD pipeline execution
-- Reduced context switching between different package management tools
-- Compatible with existing Python ecosystem and standards
+- Native support for Python packaging standards (PEP 517/518)
+- Eliminates need for legacy requirements.txt files
+- Better developer experience with modern tooling
 
 ### Negative
 - Team needs to learn UV-specific commands and workflows
 - Potential edge case compatibility issues with complex dependencies
 - Dependency on relatively new tool (though backed by reputable company)
-- May require updates to documentation and development guides
-- Initial migration effort for existing projects
+- Initial setup effort for pyproject.toml configuration
 
 ### Neutral
-- Maintains compatibility with existing requirements.txt and pyproject.toml files
-- Can coexist with traditional tools during transition period
-- Follows Python packaging standards and conventions
+- Native pyproject.toml support aligns with modern Python packaging standards
+- Establishes consistent modern workflow across all project components
+- Sets foundation for future Python packaging evolution
 
 ## Implementation Plan
 
-1. **Phase 1: Backend Service Migration (Week 1)**
-   - Install UV on development machines and CI/CD systems
-   - Update Entirius Backend CLAUDE.md with UV commands
-   - Test UV with existing requirements files
-   - Update Docker configurations to use UV
-   - Responsible parties: Backend Team
-   - Timeframe: 1 week
+This plan establishes UV as the mandatory standard for all new Python projects in the Entirius organization.
 
-2. **Phase 2: Documentation and Training (Week 2)**
-   - Create UV usage documentation
-   - Update development setup guides
-   - Team training sessions on UV commands
-   - Update onboarding documentation
-   - Responsible parties: DevOps and Documentation Team
-   - Timeframe: 1 week
-
-3. **Phase 3: CI/CD Integration (Week 3)**
-   - Update GitHub Actions to use UV
-   - Benchmark performance improvements
-   - Update deployment scripts
-   - Monitor for any compatibility issues
-   - Responsible parties: DevOps Team
-   - Timeframe: 1 week
-
-4. **Phase 4: Full Adoption (Week 4)**
-   - Migrate all Python projects to UV
-   - Remove legacy pip commands from documentation
-   - Establish UV as standard tool
-   - Performance monitoring and optimization
-   - Responsible parties: All Development Teams
-   - Timeframe: 1 week
+- **Mandate UV for all new Python projects** - No exceptions for greenfield development
+- Install UV on all development machines, CI/CD systems, and production environments
+- Create standardized `pyproject.toml` templates for different project types:
+  - Django services template
+  - Python modules template  
+  - CLI tools template
+  - Library packages template
 
 ## Success Metrics
 
-- Dependency installation time reduction of at least 50%
-- Successful migration of all Python projects without functionality loss
-- Developer satisfaction improvement in environment setup
-- CI/CD build time reduction of at least 30%
-- Zero critical compatibility issues after 30 days of usage
-- 100% team adoption within 1 month
+### Implementation Success
+- **100% compliance**: All new Python projects use UV and pyproject.toml (no exceptions)
+- **Template adoption**: Standardized pyproject.toml templates used across all project types
+- **Infrastructure readiness**: UV installed and configured on 100% of development and deployment environments
+- **Team competency**: All Python developers trained and certified on UV workflows
+
+### Operational Excellence  
+- **CI/CD optimization**: All Python project pipelines use UV with proper caching strategies
+- **Developer experience**: Reduced project setup time through standardized UV workflows  
+- **Quality assurance**: Zero critical compatibility issues with UV in production environments
+- **Documentation completeness**: Comprehensive UV guidelines and troubleshooting resources available
+
+### Performance and Adoption
+- **Dependency installation speed**: Demonstrate 10-50x performance improvement over traditional tools
+- **Developer satisfaction**: Positive feedback on UV adoption and workflow improvements
+- **Compliance monitoring**: Automated tracking of UV usage across all new Python projects
+- **Continuous improvement**: Regular optimization of templates and workflows based on team feedback
 
 ## Related ADRs
 

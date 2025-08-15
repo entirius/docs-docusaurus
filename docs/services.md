@@ -77,8 +77,8 @@ REST_FRAMEWORK = {
 ```bash
 cd services/entirius-backend
 
-# Install dependencies
-pip install -r requirements.txt
+# Install dependencies with UV
+uv sync
 
 # Run migrations
 python manage.py migrate

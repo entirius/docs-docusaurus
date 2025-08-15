@@ -95,11 +95,11 @@ modules/your-module/
 
 ## Installation
 
-Modules are installed as Python packages:
+Modules are installed as Python packages using UV:
 
 ```bash
 cd modules/entirius-pim
-pip install -e .
+uv pip install -e .
 ```
 
 Add to your Django `INSTALLED_APPS`:
